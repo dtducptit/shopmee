@@ -33,7 +33,7 @@ public class CountryRestControllerTests {
 	@Autowired CountryRepository repo;
 	
 	@Test
-	@WithMockUser(username = "nam@codejava.net", password = "something", roles = "ADMIN")
+	@WithMockUser(username = "khaganiam@code.edu.az", password = "xaqani123", roles = "ADMIN")
 	public void testListCountries() throws Exception {
 		String url = "/countries/list";
 		
@@ -49,7 +49,7 @@ public class CountryRestControllerTests {
 	}
 	
 	@Test
-	@WithMockUser(username = "nam@codejava.net", password = "something", roles = "ADMIN")
+	@WithMockUser(username = "khaganiam@code.edu.az", password = "xaqani123", roles = "ADMIN")
 	public void testCreateCountry() throws JsonProcessingException, Exception {
 		String url = "/countries/save";
 		String countryName = "Germany";
@@ -75,7 +75,7 @@ public class CountryRestControllerTests {
 	}
 	
 	@Test
-	@WithMockUser(username = "nam@codejava.net", password = "something", roles = "ADMIN")
+	@WithMockUser(username = "khaganiam@code.edu.az", password = "xaqani123", roles = "ADMIN")
 	public void testUpdateCountry() throws JsonProcessingException, Exception {
 		String url = "/countries/save";
 		
@@ -100,7 +100,7 @@ public class CountryRestControllerTests {
 	}
 	
 	@Test
-	@WithMockUser(username = "nam@codejava.net", password = "something", roles = "ADMIN")
+	@WithMockUser(username = "khaganiam@code.edu.az", password = "xaqani123", roles = "ADMIN")
 	public void testDeleteCountry() throws Exception {
 		Integer countryId = 7;
 		String url = "/countries/delete/" + countryId;
